@@ -87,8 +87,19 @@ git clone https://github.com/sgwannabe/b3-building-analyzer.git \
 
 B³ 스킬이 위 데이터를 분석하여 생성한 결과물:
 
-- 📊 **HTML 블로그 포스트:** [`examples/output/45-christopher-b3-analysis.html`](examples/output/45-christopher-b3-analysis.html) — 차트 5개 포함, 10-section 투자 분석
+- 📊 **HTML 블로그 포스트:** [**라이브 페이지에서 보기 ↗**](https://sgwannabe.github.io/b3-building-analyzer/) — 차트 5개 포함, 10-section 투자 분석
 - 📈 **B³ 레이더 차트:** [`examples/b3-radar-sample.png`](examples/b3-radar-sample.png)
+- 📱 **인스타그램 캐러셀:** [`examples/output/instagram/`](examples/output/instagram/) — 6장 슬라이드 (1080×1080)
+
+**인스타그램 캐러셀 미리보기:**
+
+| Slide 1: Cover | Slide 2: Scores | Slide 3: Thesis |
+|---|---|---|
+| ![Cover](examples/output/instagram/slide_1_cover.png) | ![Scores](examples/output/instagram/slide_2_scores.png) | ![Thesis](examples/output/instagram/slide_3_thesis.png) |
+
+| Slide 4: Lines | Slide 5: Rent | Slide 6: CTA |
+|---|---|---|
+| ![Lines](examples/output/instagram/slide_4_lines.png) | ![Rent](examples/output/instagram/slide_5_rent.png) | ![CTA](examples/output/instagram/slide_6_cta.png) |
 
 ### 분석 결과 요약
 
@@ -130,6 +141,7 @@ Avoid:      B-line (2BR) → 1.5% CAGR, 시장 평균 하회
 - **블로그 포스트** (HTML/Markdown) — 차트 포함 10-section 분석
 - **PDF 리포트** — 커버 페이지 + 차트 + 스코어카드
 - **PPTX 덱** — 12-15 슬라이드 투자자용 프레젠테이션
+- **인스타그램 캐러셀** — 1080×1080 정사각형 6장, 다크 테마
 
 ---
 
@@ -140,19 +152,29 @@ b3-building-analyzer/
 ├── README.md
 ├── LICENSE
 ├── install.sh                             # OpenClaw 원클릭 설치
+├── docs/
+│   └── index.html                         # GitHub Pages 라이브 분석 결과
 ├── b3-building-analyzer/
 │   ├── SKILL.md                           # 메인 스킬 지시서 (7단계 워크플로우)
 │   ├── references/
 │   │   ├── b3-methodology.md              # B³ 스코어링 공식 & 분류 로직
 │   │   ├── input-parsing.md               # 입력 포맷별 파싱 가이드
-│   │   └── output-templates.md            # 블로그/PDF/PPTX 템플릿
+│   │   └── output-templates.md            # 블로그/PDF/PPTX/인스타그램 템플릿
 │   └── scripts/
-│       └── parse_transactions.py          # 거래 데이터 파서
+│       ├── parse_transactions.py          # 거래 데이터 파서
+│       └── generate_instagram.py          # 인스타그램 캐러셀 생성기
 └── examples/
     ├── sample-transactions.csv            # 45 Christopher 샘플 데이터
     ├── b3-radar-sample.png                # 레이더 차트 예시
     └── output/
-        └── 45-christopher-b3-analysis.html  # 스킬 생성 결과물
+        ├── 45-christopher-b3-analysis.html  # HTML 블로그 포스트
+        └── instagram/                       # 인스타그램 캐러셀 (6장)
+            ├── slide_1_cover.png
+            ├── slide_2_scores.png
+            ├── slide_3_thesis.png
+            ├── slide_4_lines.png
+            ├── slide_5_rent.png
+            └── slide_6_cta.png
 ```
 
 ---

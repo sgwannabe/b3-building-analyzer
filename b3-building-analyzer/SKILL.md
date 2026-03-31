@@ -128,6 +128,7 @@ The user may want one or more output formats. Read the relevant files:
 - **Blog post (Markdown/HTML)**: Follow the 10-section template in `references/output-templates.md`
 - **PDF report**: Use `matplotlib` for charts and a PDF library (e.g., `reportlab`, `weasyprint`, or `fpdf2`) to assemble the report. See `references/output-templates.md` for the PDF-specific section.
 - **PPTX deck**: Use `python-pptx` to generate slides. See `references/output-templates.md` for the deck structure.
+- **Instagram carousel**: Generate 6 square slides (1080×1080) using `scripts/generate_instagram.py` as a template. See `references/output-templates.md` for the slide structure.
 - **All of the above**: Generate each sequentially
 
 ### Output Structure (All Formats)

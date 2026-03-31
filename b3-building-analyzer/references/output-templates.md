@@ -134,3 +134,30 @@ When generating PPTX output, use `python-pptx` in Python.
 - Use the building's B³ classification color: Core=Blue, Value-Add=Green, Opportunistic=Orange, Distressed=Red
 - Charts should be large (60%+ of slide area)
 - Speaker notes should contain the full analytical narrative for each slide
+
+---
+
+## Instagram Carousel (1080×1080)
+
+Generate 6 square images optimized for Instagram carousel posts. Use `matplotlib` with dark theme (background `#0D1B2A`, gold accents `#C9A84C`). Each image must be 1080×1080 pixels.
+
+Use `scripts/generate_instagram.py` as the base template. The script generates all 6 slides with the correct design tokens and layout. Customize the data values for each building.
+
+### Slide Structure (6 slides)
+
+| Slide | Content | Purpose |
+|-------|---------|---------|
+| 1 | **Cover** — Address, B³ composite score, classification badge | Hook attention |
+| 2 | **Score Breakdown** — Three horizontal bars (Liquidity/Rent/Appreciation) with scores | Show the data |
+| 3 | **Investment Thesis** — Three key metrics converging → thesis sentence | Tell the story |
+| 4 | **Line Performance** — Alpha line vs. Avoid line with CAGR comparison | Actionable insight |
+| 5 | **Rent Growth** — Same-unit rent growth examples with before/after | Prove the yield |
+| 6 | **CTA** — Summary stats grid + link to full analysis | Drive engagement |
+
+### Design Principles
+- Dark navy background (`#0D1B2A`) with gold (`#C9A84C`) accents — luxury real estate aesthetic
+- One key insight per slide, maximum 3 data points
+- Numbers must be large (14pt+) and bold — readable on mobile at a glance
+- YRE branding footer on every slide
+- No clutter — whitespace is a feature
+- Classification colors: Core=Gold badge, Value-Add=Green badge, Opportunistic=Orange badge, Distressed=Red badge
