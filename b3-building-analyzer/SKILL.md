@@ -52,13 +52,21 @@ For each line, calculate:
 - **Rental absorption speed**: DOM for rental listings
 
 ### Cross-Metric Synthesis (THIS IS THE KEY PART)
-After computing individual metrics, you MUST identify relationships:
 
-1. **Liquidity + Rent Capture convergence**: Do lines that rent fast also sell fast? If yes → "fortress" asset. If divergent → investigate why.
-2. **Appreciation vs. Rent Growth alignment**: If rents grew 40% but prices only grew 10%, there's a cap rate compression story. If both grew together → "compounding" asset.
-3. **Line divergence**: Do some lines consistently outperform? This reveals the building's "alpha lines" vs. "commodity lines."
-4. **Floor premium persistence**: Do higher floors maintain their premium in downturns, or does the spread compress?
-5. **Cycle behavior**: How did the building perform through identifiable market regimes (2013-15 boom, 2016-19 plateau, 2020 COVID, 2021-22 recovery, 2023+ normalization)?
+This is the section that makes this skill different from generic AI analysis. Generic AI will produce: "Rents are high. Prices went up. DOM is low." — three separate observations. That is useless.
+
+What you MUST produce instead is a **causal chain**: "BECAUSE rents grew X% AND prices appreciated AND units sell in Y days — all three happening at the same time — THEREFORE this building is [classification] and we recommend [action] for [investor type]."
+
+The key word is **simultaneously**. A building where rents grew 40% but takes 200 days to sell is a completely different investment than one where rents grew 40% AND sells in 47 days. The interplay between metrics is the thesis — not the metrics themselves.
+
+After computing individual metrics, build the causal argument:
+
+1. **The Income Story** (Rent Capture): Are rents growing? By how much, over what period? What does this mean for the owner's cash flow?
+2. **The Equity Story** (Appreciation): Is the asset growing in value? Which lines? Over what timeframe?
+3. **The Exit Story** (Liquidity): Can the owner leave when they want to? How quickly? At what discount from ask?
+4. **The Convergence** (THIS IS THE THESIS): Are all three happening at the same time? If yes — the owner earns growing income WHILE their asset appreciates AND they can exit anytime. State this explicitly. Do NOT just list the three metrics with "+" signs between them. Write it as a connected argument: "Because A is true, and at the same time B is true, and on top of that C is true, the result is D — and therefore we recommend E."
+
+If the metrics diverge (e.g., high rent but low liquidity), that divergence IS the thesis — explain what kind of investor it suits and why.
 
 ## Step 3: Score Using B³ System
 
@@ -151,7 +159,8 @@ The Executive Summary should echo the thesis from Step 4, not introduce new info
 ## Critical Reminders
 
 - **Never describe data without interpreting it.** "PPSF rose from $1,700 to $2,600" is description. "The building captured the 2013-15 boom fully, with PPSF rising 53% — and critically, it held those gains through the subsequent plateau" is analysis.
-- **Always connect metrics to each other.** Isolated numbers are useless. The value is in the conjunction: "rents grew 40% AND prices compounded AND liquidity stayed under 50 days."
+- **NEVER list metrics with "+" signs. ALWAYS write causal chains.** Wrong: "Elite rent capture ($100/SF) + rapid liquidity (47-day DOM) + steady appreciation = fortress." Right: "Rents grew 40% in 3 years — that's growing income. At the same time, prices have been appreciating for a decade — that's growing equity. On top of that, units sell in 47 days — that's exit optionality. When all three happen simultaneously, the owner earns more each year, gets richer each year, and can leave anytime. This is why we recommend ownership." The difference: the first is a formula, the second is an argument. Always write the argument.
 - **Name the investor.** Every building has an ideal owner profile. State it explicitly.
+- **Make a recommendation.** Don't just classify — tell the reader whether to buy, hold, or avoid, and for which investor type. The thesis must end with an action, not just a label.
 - **Be honest about weaknesses.** A credible analysis acknowledges laggards and risks. Cherry-picking winners destroys trust.
 - **Use specific numbers.** Never say "strong appreciation" — say "5% CAGR on the E-line, outperforming NYXRCSA by 2.1pp."
