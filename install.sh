@@ -1,11 +1,11 @@
 #!/bin/bash
 # B³ Building Analyzer — OpenClaw Install Script
-# Usage: curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/b3-building-analyzer/main/install.sh | bash
+# Usage: curl -sSL https://raw.githubusercontent.com/sgwannabe/b3-building-analyzer/main/install.sh | bash
 
 set -e
 
 SKILL_DIR="$HOME/.openclaw/workspace/skills/b3-building-analyzer"
-REPO_URL="https://github.com/YOUR_USERNAME/b3-building-analyzer.git"
+REPO_URL="https://github.com/sgwannabe/b3-building-analyzer.git"
 
 echo "🏗️  B³ Building Analyzer — Installing..."
 
